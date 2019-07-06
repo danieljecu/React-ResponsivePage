@@ -1,0 +1,67 @@
+#AppCards-container {
+  margin: 10px auto;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: black 0px 0px 1px;
+  transition: 100ms linear all;
+}
+#AppCards-container:hover {
+  transform: scale(1.05);
+}
+#AppCards-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  background-color: #e1e1e1;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+#AppCards-image {
+  width: 50%;
+}
+#AppsCard-title {
+  height: 15%;
+  margin: 0;
+}
+#AppsCard-auth {
+  height: 10%;
+  margin: 0;
+}
+#AppCards-star-container {
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+#AppCards-star {
+  width: 8%;
+  margin-right: 2%;
+}
+
+@media screen and (min-width: 1024px) {
+  #AppCards-wrapper {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  #AppCards-wrapper {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #AppCards-wrapper {
+    width: 50%;
+  }
+  #AppCards-container {
+    margin: 10px auto;
+    padding: 5px;
+    width: 145px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: black 0px 0px 1px;
+    transition: 100ms linear all;
+  }
+}

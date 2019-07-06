@@ -1,20 +1,20 @@
 import React from "react";
 import Header from "../components/Header";
-import Navi from "../components/Navigation";
-import AppDisplay from "../components/AppDisplay";
+import Footer from "../components/Footer";
+import AppDisplay from "./AppDisplay";
 import Welcome from "../components/Welcome";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-const Location = { app: "Apps" };
+
 const Page = props => {
   return (
     <React.Fragment>
-      <Header />
-      <Navi />
       <BrowserRouter>
+        <Header />
         <Switch>
           <Route path="/" exact component={Welcome} />
           <Route path="/app" exact component={AppDisplay} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </React.Fragment>
   );

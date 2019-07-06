@@ -17,7 +17,9 @@
   align-items: center;
   flex: 3;
   justify-content: center;
+  margin-left: 5px;
 }
+
 #header-menu {
   width: 3vh;
   transition: 100ms linear;
@@ -38,16 +40,32 @@
 #header-profile:hover {
   transform: scale(1.1);
 }
-#header-menu-container {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  justify-content: flex-end;
-}
 
 #header-profile-container {
   display: flex;
   align-items: center;
   flex: 1;
   justify-content: center;
+}
+#header-Tmenu-container {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  #header-profile-container {
+    display: none;
+  }
+  #header-menu-container {
+    display: none;
+  }
+  #header-Tmenu-container {
+    display: block;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+  #header-Tmenu {
+    width: 4.5vh;
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
 
 const Header = props => {
   return (
@@ -13,6 +13,9 @@ const Header = props => {
       </div>
       <div id="header-profile-container">
         <img id="header-profile" src={"../assets/profile.svg"} alt="Logo" />
+      </div>
+      <div id="header-Tmenu-container">
+        <img id="header-Tmenu" src={"../assets/menu.svg"} alt="Logo" />
       </div>
     </div>
   );
