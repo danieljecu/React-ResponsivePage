@@ -30,7 +30,7 @@ const data = [
   }
 ];
 describe("AppDisplay", () => {
-  it("init render", async () => {
+  it("init render", () => {
     const wrap = shallow(<AppDisplay />);
     expect(wrap.find("#Apps-display-container").length).toEqual(1);
   });
