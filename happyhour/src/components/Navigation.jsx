@@ -1,15 +1,11 @@
 import React from "react";
 import "./Navigation.css";
-import { withRouter } from "react-router-dom";
+
 const pathDict = { app: "My Apps" };
 const Navigation = props => {
-  const getPath = string => {
-    return string.split("/")[1];
-  };
-
   const [path, setPath] = React.useState(undefined);
   React.useEffect(() => {
-    setPath(getPath(props.location.pathname));
+    setPath(window.location.href.split("localhost:3000/")[1]);
   }, []);
   return (
     <React.Fragment>
@@ -26,4 +22,4 @@ const Navigation = props => {
     </React.Fragment>
   );
 };
-export default withRouter(Navigation);
+export default Navigation;

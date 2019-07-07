@@ -45,6 +45,7 @@ const AppCard = props => {
         <div id="AppCards-container">
           <div>
             <span
+              className="AppCards-pub"
               style={{
                 backgroundColor: props.data.published
                   ? "rgba(80,189,156,0.7)"
