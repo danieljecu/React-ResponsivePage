@@ -6,14 +6,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import asyncCom from "../utils/AsyncComponent";
 
 const Page = props => {
-  const Apps = asyncCom(() => import("./AppDisplay"));
+  const AppDis = asyncCom(() => import("./AppDisplay"));
   return (
     <React.Fragment>
       <BrowserRouter>
         <Header />
         <Switch>
           <Route path="/" exact component={Welcome} />
-          <Route path="/app" exact component={Apps} />
+          <Route path="/app" exact component={AppDis} />
         </Switch>
         <Footer />
       </BrowserRouter>
