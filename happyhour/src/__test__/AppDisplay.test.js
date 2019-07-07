@@ -1,7 +1,6 @@
 import React from "react";
-
 import { render, mount, shallow } from "enzyme";
-import AppDisplay from "../AppDisplay";
+import AppDisplay from "../containers/AppDisplay";
 import MockAdapter from "axios-mock-adapter";
 import axios from "axios";
 const data = [

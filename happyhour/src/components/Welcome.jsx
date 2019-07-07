@@ -7,6 +7,7 @@ const Welcome = props => {
       <h1 style={{ textAlign: "center" }}>Welcome</h1>
       <p style={{ textAlign: "center" }}>
         <Link
+          id="Welcome-jump"
           style={{
             textDecoration: "none",
             cursor: "pointer",
